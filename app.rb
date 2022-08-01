@@ -9,6 +9,7 @@ class App
     puts
     option = nil
     while option != 10
+      puts
       puts 'Please choose an option by entrerin a number: '
       @options.options_list
       puts
@@ -16,6 +17,7 @@ class App
       option = gets.chomp.strip.to_i
       @options.do(option)
     end
+    @options.save_item
     puts '--------***--------------'
     puts ' GOOD BYE 🎉🎉🎉'
     puts '--------***--------------'
