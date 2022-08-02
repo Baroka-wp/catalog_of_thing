@@ -41,4 +41,3 @@ CREATE TABLE music_albums (
     genre_id INT,
     CONSTRAINT genre_fk FOREIGN KEY (genre_id) REFERENCES genres(id)
 );
-

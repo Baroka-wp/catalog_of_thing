@@ -1,6 +1,9 @@
 require 'json'
 require './classes/book'
 require './classes/label'
+require './classes/music_album'
+require './classes/game'
+require './classes/genre'
 require './modules/item_controller'
 require './modules/label_controller'
 require './modules/genre_controller'
@@ -20,7 +23,7 @@ class Options
 
   def initialize
     @items = load_items
-    @genres = []
+    @genres = load_genre
     @labels = load_labels
     @authors = []
   end
