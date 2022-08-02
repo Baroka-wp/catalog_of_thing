@@ -3,5 +3,4 @@ module GameController
 
   def load_games; end
 
-  def save_game; end
 end
