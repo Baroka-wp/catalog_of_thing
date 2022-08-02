@@ -24,7 +24,7 @@ context 'When retrieving a publish date from music album' do
     end
 end
 
-context 'When checking if music album is on sportify' do
+context 'When checking if music album is on spotify' do
     it 'should return true' do
         expect(@music_album.on_spotify).to eq(true)
     end 
