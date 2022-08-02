@@ -1,3 +1,6 @@
+require 'json'
+require './classes/book'
+require './classes/label'
 require './modules/item_controller'
 require './modules/label_controller'
 require './modules/genre_controller'
@@ -16,13 +19,14 @@ class Options
   include GameController
 
   def initialize
-    @items = []
+    @items = load_items
     @genres = []
-    @labels = []
+    @labels = load_labels
     @authors = []
   end
 
   def options_list
+    puts
     puts '1- List all books'
     puts '2- List all music albums'
     puts '3- List all games'
