@@ -1,3 +1,3 @@
 class Game
-    def initialize;end
+  def game; end
 end
