@@ -43,7 +43,7 @@ module ItemController
     @items.each_with_index do |item, index|
       if item.is_a?(Book)
         print "#{index}- #{item.name} published at : #{item.publish_date}  "
-        print "by #{item.publisher} | Cover state : #{item.cover_state} "
+        print "by #{item.publisher} | Cover state : #{item.cover_state}\n"
       end
     end
     puts
