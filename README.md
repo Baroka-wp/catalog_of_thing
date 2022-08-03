@@ -57,7 +57,13 @@ Kindly modify the files as needed.
 
 - Gmail: [![Gmail Badge](https://img.shields.io/badge/-baroka--Irotori-white?logo=Gmail&logoColor=EA4335&style=plastic)](mailto:birotori@gmail.com)
 
+👤 **Stephen Annor**
 
+- GitHub: [braincee](https://github.com/braincee)
+- Twitter: [annor0543](https://twitter.com/annor0543)
+- LinkedIn: [Stephen Annor](https://www.linkedin.com/stephen-annor)
+  
+  
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
