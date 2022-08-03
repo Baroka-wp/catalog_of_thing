@@ -9,7 +9,7 @@ module ItemController
         when 'Book'
           store << Book.new(item['name'], item['publisher'], item['cover_state'], item['publish_date'])
         when 'MusicAlbum'
-          store << MusicAlbum.new(item['name'], item['on_spotify'], item['publish_date'])
+          store << MusicAlbum.new(item['name'], item['publish_date'], item['on_spotify'])
         when 'Game'
           store << Game.new(item['name'], item['multiplayer'], item['last_played_at'], item['publish_date'])
         end
@@ -51,13 +51,12 @@ module ItemController
 
   def all_music_albums
     puts 'List of Music Albums'
-    puts 'Comming soon !'
-    # @items.each do |item|
-    #   if item.is_a?(MusicAlbum)
-    #     print "- #{item.id} - #{item.name} publishe at : #{item.publish_date} "
-    #     print "- On spotify : #{item.on_spotify}"
-    #   end
-    # end
+    @items.each do |item|
+      if item.is_a?(MusicAlbum)
+        print "- #{item.id} - #{item.name} published at : #{item.publish_date} "
+        print "- On spotify : #{item.on_spotify}\n"
+      end
+    end
   end
 
   def all_games
