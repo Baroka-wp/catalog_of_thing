@@ -38,21 +38,48 @@ Likewise for Ruby installation.
 $ ruby --version && irb
 ```
 
-### Setup
 
-Clone the repository using the GitHub link provided below.
-
-### Install
+### Install and Usage
 
 In the terminal, go to your file directory and run this command.
 
+> Clone the repository
 ```
-$ git clone git@github.com:mavericks-db/morse-decoder.git
+$ git clone https://github.com/Baroka-wp/catalog_of_thing
+```
+```
+$ cd catalog_of_thing
+```
+> Install Gemfile
+
+```
+$ bundle install
 ```
 
-### Usage
+> Run the app 
 
-Kindly modify the files as needed.
+```
+$ ruby main.rb
+```
+
+> Console app display
+
+![Capture d’écran 2022-08-03 à 13 06 04](https://user-images.githubusercontent.com/67879818/182622871-c600c919-f86e-4897-82f8-6387c1c3d8c2.png)
+
+
+## Rubocop
+> To check linter
+
+```
+$ rubocop --color
+```
+
+## Rspec
+> To run testing 
+```
+$ rspec 
+```
+
 
 ## Author
 
