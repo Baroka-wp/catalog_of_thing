@@ -5,7 +5,7 @@ class App
 
   def run
     puts
-    puts 'Welcome in Catalog of thinks ! '
+    puts 'Welcome in Catalog of things !'
     puts
     option = nil
     while option != 10

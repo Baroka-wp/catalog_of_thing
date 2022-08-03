@@ -6,7 +6,7 @@ describe Book do
   before :each do
     @book = Book.new('The Hobbit', 'J.R.R. Tolkien', 'good', '1937/12/21')
     @label = Label.new('Gift', 'Green')
-    @book.add_label = @label
+    @book.label = @label
   end
   it 'should be an instance of Book' do
     expect(@book).to be_an_instance_of Book
@@ -27,7 +27,7 @@ describe Book do
     expect(@book.can_be_archived?).to eq(true)
   end
 
-  context 'when add label' do
+  context 'when add label to book' do
     it 'should have label' do
       expect(@book.label.title).to eq('Gift')
       expect(@book.label.color).to eq('Green')

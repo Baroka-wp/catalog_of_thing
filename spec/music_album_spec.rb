@@ -18,6 +18,12 @@ describe MusicAlbum do
     end
   end
 
+  context 'The music album could be archived' do
+    it 'should can be archived' do
+      expect(@music_album.can_be_archived?).to eq(true)
+    end
+  end
+
   context 'When retrieving a publish date from music album' do
     it 'should return a publish date' do
       expect(@music_album.publish_date).to eq(Date.parse('1982-06-21'))

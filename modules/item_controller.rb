@@ -39,7 +39,7 @@ module ItemController
   end
 
   def all_books
-    puts 'List of Books'
+    puts 'List of Books:'
     @items.each_with_index do |item, index|
       if item.is_a?(Book)
         print "#{index}- #{item.name} published at : #{item.publish_date}  "
@@ -50,21 +50,21 @@ module ItemController
   end
 
   def all_music_albums
-    puts 'List of Music Albums'
-    @items.each do |item|
+    puts 'List of Music Albums:'
+    @items.each_with_index do |item, index|
       if item.is_a?(MusicAlbum)
-        print "- #{item.id} - #{item.name} published at : #{item.publish_date} "
-        print "- On spotify : #{item.on_spotify}\n"
+        print "#{index} - #{item.name} published at : #{item.publish_date} "
+        print "On spotify : #{item.on_spotify}\n"
       end
     end
   end
 
   def all_games
-    puts 'List of Games'
-    @items.each do |item|
+    puts 'List of Games:'
+    @items.each_with_index do |item, index|
       if item.is_a?(Game)
-        print "- #{item.id} - #{item.name} published at : #{item.publish_date}  "
-        print "- multiplayer #{item.multiplayer} | Last played at: #{item.last_played_at}\n"
+        print "#{index} - #{item.name} published at : #{item.publish_date}  "
+        print "multiplayer #{item.multiplayer} | Last played at: #{item.last_played_at}\n"
       end
     end
   end
