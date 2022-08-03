@@ -9,6 +9,15 @@ Study project based on a UML class diagram and object-oriented programming to bu
 - [x] Programming Language: Ruby
 - [x] Linter: [Rubocop](https://rubocop.org/)
 - [x] VS Code
+- [X] UML diagram
+
+## [Presentation Video](https://youtu.be/M-Mspe4cexI)
+
+
+## UML Diagram
+
+![image](https://user-images.githubusercontent.com/67879818/182600206-33fcebec-56ed-4776-8bc3-2afd6d6e8eec.png)
+
 
 ## Getting Started
 
