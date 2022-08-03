@@ -23,3 +23,17 @@ CREATE TABLE book(
     genre_id INT,
     CONSTRAINT fk_label FOREIGN KEY(label_id) REFERENCES label(id),
 );
+
+CREATE TABLE game(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    published_date DATE,
+    multiplayer VARCHAR(255),
+    last_played_at DATE
+);
+
+CREATE TABLE author(
+    id SERIAL PRIMARY KEY,
+    first_name VARCHAR(255),
+    last_name VARCHAR(255)
+);
