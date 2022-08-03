@@ -62,6 +62,12 @@ Kindly modify the files as needed.
 - GitHub: [braincee](https://github.com/braincee)
 - Twitter: [annor0543](https://twitter.com/annor0543)
 - LinkedIn: [Stephen Annor](https://www.linkedin.com/stephen-annor)
+
+👤 **Kanombola Kanombola** 
+
+- GitHub: [@KanoCode](https://github.com/KanoCode)
+- Twitter: [@Kanombola_s](https://twitter.com/Kanombola_s)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kanombola-kanombola/)
   
   
 ## 🤝 Contributing
