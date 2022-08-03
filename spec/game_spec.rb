@@ -8,4 +8,12 @@ describe Game do
   it 'should be an instance of Game' do
     expect(@game).to be_an_instance_of Game
   end
+
+  it 'should named GTA' do
+    expect(@game.name).to eq('GTA')
+  end
+
+  it 'Could not be archived' do
+    expect(@game.can_be_archived?).to eq(false)
+  end
 end
