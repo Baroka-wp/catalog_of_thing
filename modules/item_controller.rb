@@ -42,7 +42,7 @@ module ItemController
     puts 'List of Books'
     @items.each_with_index do |item, index|
       if item.is_a?(Book)
-        print "#{index}- #{item.name} publishe at : #{item.publish_date}  "
+        print "#{index}- #{item.name} published at : #{item.publish_date}  "
         print "by #{item.publisher} | Cover state : #{item.cover_state} "
       end
     end
@@ -61,12 +61,11 @@ module ItemController
 
   def all_games
     puts 'List of Games'
-    puts 'Comming soon !'
-    # @items.each do |item|
-    #   if item.is_a?(Game)
-    #     print "- #{item.id} - #{item.name} publishe at : #{item.publish_date}  "
-    #     print "- multiplayer #{item.multiplayer} | Last played at: #{item.last_played_at}"
-    #   end
-    # end
+    @items.each do |item|
+      if item.is_a?(Game)
+        print "- #{item.id} - #{item.name} published at : #{item.publish_date}  "
+        print "- multiplayer #{item.multiplayer} | Last played at: #{item.last_played_at}\n"
+      end
+    end
   end
 end

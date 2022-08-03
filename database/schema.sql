@@ -43,3 +43,18 @@ CREATE TABLE music_albums (
 );
 
 CREATE INDEX index_genre_id ON music_albums(genre_id);
+
+CREATE TABLE game(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    published_date DATE,
+    multiplayer VARCHAR(255),
+    last_played_at DATE
+);
+
+CREATE TABLE author(
+    id SERIAL PRIMARY KEY,
+    first_name VARCHAR(255),
+    last_name VARCHAR(255)
+);
+

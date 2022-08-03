@@ -1,5 +1,6 @@
 require 'json'
 require './classes/book'
+require './classes/author'
 require './classes/label'
 require './classes/music_album'
 require './classes/game'
@@ -25,7 +26,7 @@ class Options
     @items = load_items
     @genres = load_genre
     @labels = load_labels
-    @authors = []
+    @authors = load_authors
   end
 
   def options_list
